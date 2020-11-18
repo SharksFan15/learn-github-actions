@@ -8,3 +8,11 @@ jobs:
       - uses: actions/setup-node@v1
       - run: npm install -g bats
       - run: bats -v
+      - name: Setup Python
+        uses: actions/setup-python@v2.1.4
+        with:
+          # Version range or exact version of a Python version to use, using SemVer's version range syntax.
+          python-version: '3.x'
+          # The target architecture (x86, x64) of the Python interpreter.
+          architecture: 'x64'
+      - run: python python/hello-world.py 
