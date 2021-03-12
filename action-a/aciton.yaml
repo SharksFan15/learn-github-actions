@@ -1,0 +1,9 @@
+name: "Hello Actions"
+	description: "Greet someone"
+	author: "nickstanley1971@gmail.com"
+	
+	inputs:
+		MY_NAME:
+			descrition: "Who to greet"
+			required: true
+			default: "World"
